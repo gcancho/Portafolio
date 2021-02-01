@@ -6,7 +6,7 @@ import Social from './Social';
 const Contacto = () => {
     return (
         <>
-            <section className="contacto">
+            <section className="contacto" id="contacto">
                 <div className="contacto__info">
                     <h2 className="contacto__titulo">¿Quieres contactarme?</h2>
                     <p className="contacto__descripcion"></p>

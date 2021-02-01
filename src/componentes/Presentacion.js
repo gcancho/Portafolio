@@ -4,7 +4,7 @@ import Datos from './Datos';
 
 const Presentacion = () => {
     return (
-        <section className="presentacion">
+        <section className="presentacion" id="presentacion">
             <h2 className="presentacion__subtitulo">Portafolio</h2>
             <div className="presentacion__personal">
                 <img className="presentacion__imagen" src="" alt="" />
