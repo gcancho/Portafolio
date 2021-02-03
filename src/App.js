@@ -12,10 +12,12 @@ function App() {
   return (
     <>
       <Header />
-      <Inicio />
-      <Presentacion />
-      <Portafolio />
-      <Contacto />
+      <div className="desktop__derecha">
+        <Inicio />
+        <Presentacion />
+        <Portafolio />
+        <Contacto />
+      </div>
     </>
   );
 }

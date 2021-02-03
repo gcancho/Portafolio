@@ -7,9 +7,10 @@ $blanco: #fff;
 $negro: #000;
 
 $colorFondoInicio: #f1f1f1;
-$anchoInicioSaludo: 13.5488rem;
+$anchoInicioSaludo: 13.5488em;
 $paddingSecciones: 60px 0;
 $tamanoBorderRadius: 4px;
+$margenTitulos: 0.725em 0;
 
 *{
     margin: 0;
@@ -38,6 +39,12 @@ a{
     width: 90%; 
     margin: 0 auto;
 }
+
+.titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+
 
 
 // Header
@@ -94,6 +101,10 @@ a{
     // display: block;
 }
 
+.desktop__derecha{
+    display: block;
+}
+
 // Inicio
 .inicio{
     position: relative;
@@ -132,7 +143,7 @@ a{
     // max-width: 8.75rem;   
     padding: 0.5rem;
     color: #fff;
-    box-shadow: 0 0 10px black;
+    box-shadow: 2px 0 10px black;
     background: $color1;
     border-radius: 4px;
 }
@@ -195,7 +206,7 @@ a{
 
 .presentacion__titulo{
     text-align: center;
-    margin: 0.625rem 0;
+    margin: $margenTitulos;
     font-size: 1.5em;
 }
 
@@ -208,15 +219,17 @@ a{
 }
 
 .presentacion__descripcion{
-    margin-top: 0.625rem;
+    margin: 0.9375em 0;
 }
 
 .presentacion__nombre{
     text-align: center;
     font-size: 1.2em;
+    margin: 0.3125em 0;
 }
 
-.presentacion__descripcion{
+.presentacion__parrafo{
+    margin: 10px 0;
     text-align: justify;
 }
 
@@ -229,7 +242,7 @@ a{
 
 .portafolio__titulo{
     text-align: center;
-    margin: 0.625rem 0;
+    margin: $margenTitulos;
     font-size: 1.5em;
 }
 
@@ -269,7 +282,7 @@ a{
 
 .contacto__titulo{
     text-align: center;
-    margin: 0.625em 0;
+    margin: $margenTitulos;
     font-size: 1.5em;
     color: inherit;
 }
@@ -292,9 +305,11 @@ a{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 1.25em 0;
 }
 
 .social__item{
+    cursor: pointer;
     margin: 5px 0;
     display: flex;
     align-items: center;
@@ -355,12 +370,44 @@ a{
     .menu__item{
         transform: rotate(-90deg);
     }
-    .inicio{
+    .desktop__derecha{
         position: absolute;
-        height: 100vh;
-        width: calc(100vw - 102px);
         right: 0;
+        width: calc(100vw - 102px);
+    }
+    .inicio{
+        height: 100vh;
         margin-top: initial;
+    }
+    .presentacion__personal{
+        display: flex;
+        align-items: center;
+    }
+    .presentacion__imagen{
+        flex-grow: 1;
+        width: 50%;
+    }
+    .presentacion__descripcion{
+        flex-grow: 1;
+        width: 50%;
+        padding: 1.5625em;
+    }
+    .presentacion__cards{
+        padding: 1.875em 0;
+    }
+    .card-skill{
+        width: 7.375em;
+        height: 7.375em;
+        padding: 5px;
+    }
+    .portafolio__lista{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card-portafolio{
+        width: 30%;
+        flex-grow: 1;
+        margin: 10px;
     }
 }
 @media screen and (min-width: 992px) { 

@@ -8,12 +8,12 @@ const Presentacion = () => {
     return (
         <section className="presentacion" id="presentacion">
             <div className="presentacion__wrap wrap">
-                <h2 className="presentacion__subtitulo subtitulo">Sobre mí</h2>
+                <h2 className="presentacion__titulo titulo">Sobre mí</h2>
                 <div className="presentacion__personal">
                     <img className="presentacion__imagen" src={ImagenGio} alt="" />
                     <div className="presentacion__descripcion">
                         <h3 className="presentacion__nombre">Hola soy Giovanni Cancho</h3>
-                        <p className="presentacion__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id libero ipsa qui quia. Laboriosam natus, odio illo sed, debitis, blanditiis reiciendis harum repellendus eaque nesciunt saepe unde architecto minus a.</p>
+                        <p className="presentacion__parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id libero ipsa qui quia. Laboriosam natus, odio illo sed, debitis, blanditiis reiciendis harum repellendus eaque nesciunt saepe unde architecto minus a.</p>
                         {/* <Datos /> */}
                     </div>
                 </div>
