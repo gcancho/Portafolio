@@ -1,9 +1,11 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSass } from '@fortawesome/free-brands-svg-icons'
 
-const CardSkill = () => {
+const CardSkill = ({miIcono}) => {
     return (
         <article className="card-skill">
-            <i className="card-skill__icono"></i>
+            <FontAwesomeIcon icon={miIcono} className="card-skill__icono"/>
             <label className="card-skill__texto"></label>
         </article>
     );

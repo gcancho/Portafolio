@@ -4,6 +4,7 @@ $color3: #6c63ff;
 $blanco: #fff;
 $negro: #000;
 $colorFondoInicio: #f1f1f1;
+$anchoInicioSaludo: 13.5488rem;
 
 *{
     margin: 0;
@@ -90,19 +91,23 @@ a{
 
 // Inicio
 .inicio{
+    position: relative;
     background-color: $colorFondoInicio;
-    margin-top: 60px;
+    margin-top: 60px;//Para que haya espacio y no lo la barra header
     text-align: center;
     padding: 1.25em 0;
+    height: calc(100vh - 60px);
 }
 
 .inicio__saludo{
     position: absolute;
-    left: calc(50% - 110px);
-    top: calc(50% - 90px);
+    width: $anchoInicioSaludo ;
+    left: calc(50% - 6.7741em);
+    top: calc(50% - 5.625rem);
 }
 
 .inicio__nombre{
+    display: block;
     font-size: 1.5em; //1.5 de
     color: #fff;
     text-shadow: 0.0625em 0.0625em 0.3125em #000;
@@ -114,6 +119,7 @@ a{
     font-size: 1.2em;
     margin-top: 0.625em;
 }
+
 
 .boton{
     display: block;
@@ -138,18 +144,80 @@ a{
     color: #fff;
 }
 
+
 .inicio__picture{
-    width: 250px;
+    width: 16.25em;
 }
 
+.presentacion__cards{
+    background-color: #c9c9c9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-skill{
+    background-color: #a3a3a3;
+    margin-top: 0.5rem;
+    width: 9.375rem;
+    height: 9.375rem;
+    border: 1px solid #000;
+}
+
+// ------ Presentacion ------
+
 .presentacion{
-    height: 1000px;
+    text-align: center;
+    padding: 60px 0;// Padding agregado para que funcione el smooth scroll
+}
+
+.presentacion__subtitulo{
+    text-align: center;
+    margin: 0.625rem 0;
+    font-size: 1.5em;
+}
+
+.presentacion__imagen{
+    display: block;
+    width: 100%;
+}
+
+.presentacion__descripcion{
+    margin-top: 0.625rem;
+}
+
+.presentacion__nombre{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.presentacion__descripcion{
+    text-align: justify;
+}
+
+.datos{
+    padding: 0.625rem 0;
+    background-color: lightblue;//temp
+}
+
+.datos__columna{
+    display: block;
+}
+
+.datos__columna__item{
+    display: block;
+    margin: 0.625rem 0;
 }
 
 .contacto{
     height: 1000px;
 }
 
+
+
+
+
+// Media queries
 @media screen and (min-width: 768px) { 
     body{
         font-size: 18px;
