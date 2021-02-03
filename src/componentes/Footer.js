@@ -1,11 +1,14 @@
 import React from 'react';
 
+
 const Footer = () => {
-    return ( 
+    return (
         <footer className="footer">
-            <h3 className="footer__texto">Sitio web creado por © Giovanni Cancho</h3>
+            <div className="footer__wrap wrap">
+                <h3 className="footer__texto">Sitio web creado por © Gio Cancho</h3>
+            </div>
         </footer>
-     );
+    );
 }
- 
+
 export default Footer;

@@ -4,7 +4,7 @@ import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 
 const Boton = () => {
     return (
-        <a href="#presentacion" className="boton boton--margin">
+        <a href="#contacto" className="boton boton--margin">
             <FontAwesomeIcon className="boton__icono boton__icono--caretdown" icon={faCaretDown} />Leer más</a>
     );
 }

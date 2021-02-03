@@ -2,7 +2,7 @@ import React from 'react';
 import CardSkill from './CardSkill';
 import Datos from './Datos';
 import ImagenGio from './../imagenes/gio.jpg'
-import { faHtml5, faReact, faSass, faFigma, faCss3, faPhp } from '@fortawesome/free-brands-svg-icons'
+import { faHtml5, faReact, faSass, faFigma, faCss3, faPhp } from '@fortawesome/free-brands-svg-icons';
 
 const Presentacion = () => {
     return (
@@ -14,16 +14,16 @@ const Presentacion = () => {
                     <div className="presentacion__descripcion">
                         <h3 className="presentacion__nombre">Hola soy Giovanni Cancho</h3>
                         <p className="presentacion__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id libero ipsa qui quia. Laboriosam natus, odio illo sed, debitis, blanditiis reiciendis harum repellendus eaque nesciunt saepe unde architecto minus a.</p>
-                        <Datos />
+                        {/* <Datos /> */}
                     </div>
                 </div>
                 <div className="presentacion__cards">
-                    <CardSkill miIcono={faHtml5} />
-                    <CardSkill miIcono={faCss3}/>
-                    <CardSkill miIcono={faReact}/>
-                    <CardSkill miIcono={faFigma}/>
-                    <CardSkill miIcono={faSass}/>
-                    <CardSkill miIcono={faPhp}/>
+                    <CardSkill miIcono={faHtml5} texto="Html 5"/>
+                    <CardSkill miIcono={faCss3} texto="Css 3"/>
+                    <CardSkill miIcono={faReact} texto="React JS"/>
+                    <CardSkill miIcono={faFigma} texto="Figma"/>
+                    <CardSkill miIcono={faSass} texto="Sass"/>
+                    <CardSkill miIcono={faPhp} texto="Php"/>
                 </div>
             </div>
         </section>
