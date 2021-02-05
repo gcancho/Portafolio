@@ -1,6 +1,7 @@
 import React from 'react';
 import hero from './../imagenes/hero.svg';
 import Boton from './Boton';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 
 const Inicio = () => {
     return (
@@ -9,7 +10,7 @@ const Inicio = () => {
                 <div className="inicio__saludo">
                     <h1 className="inicio__nombre">Hola soy Giovanni</h1>
                     <label className="inicio__nombre inicio__nombre--profesion">Desarrollador Front-End</label>
-                    <Boton />
+                    <Boton icono={faCaretDown} texto="Leer más"/>
                 </div>
                
                 {/* <img src="assets/undraw_new_message_2gfk.svg" class="footer__img" alt="Imagen ilustracion Contacto"></img> */}

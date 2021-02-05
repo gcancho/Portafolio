@@ -80,6 +80,7 @@ a{
 // Menu
 .menu__hamburger{
     height: 20px;
+    cursor: pointer;
 }
 
 .menu__hamburger svg{
@@ -140,10 +141,10 @@ a{
 .inicio{
     position: relative;
     background-color: $colorFondoInicio;
-    margin-top: 60px;//Para que haya espacio y no lo la barra header
+    margin-top: 50px;//Para que haya espacio y no lo la barra header
     text-align: center;
     padding: $paddingSecciones;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 50px);
 }
 
 .inicio__saludo{
@@ -287,10 +288,49 @@ a{
 }
 
 .card-portafolio__imagen{
+    // background-color: #fcfcfc;
+    border-radius: inherit;
     padding: 0.9375em;
     display: block;
     width: 100%;
-    border-radius: inherit;
+    // La imagen se ubicara arriba y respetando el alto
+    object-fit: cover;
+    height: 320px;
+    object-position: top
+}
+
+.card-portafolio__boton{
+    display: block;
+    margin: 0.3125em auto;
+    width: 8.5em;
+    padding: 0.5rem;
+    color: $blanco;
+    box-shadow: 2px 2px 5px black;
+    background: $color1;
+    opacity: 1;
+    border-radius: 4px;
+    &:hover{
+        background-color: $color1;
+        opacity: 0.9;
+    }
+}
+
+.card-portafolio__boton--icono{
+    background-color: $blanco;
+    color: $negro;
+    &:hover{
+        background-color: $blanco;
+        opacity: 0.9;
+    }
+}
+
+.card-portafolio__boton svg{
+    margin-right: 5px;
+}
+
+.card-portafolio__imagen--horizontal{
+    object-fit: none;
+    height: 255px;
 }
 
 .card-portafolio__footer{
@@ -383,6 +423,7 @@ a{
         font-size: 18px;
     }
     .header{
+        height: 50px;
         background-color: #fff;
         box-shadow: 0 0 5px #000;
         display: block;
@@ -416,6 +457,10 @@ a{
         transform: rotate(-90deg);
         // font-size: 1.125rem;
         font-weight: bold;
+    }
+    .menu__link:hover{
+        text-decoration: underline;
+        text-decoration-color: rgb(37, 37, 37);
     }
     .desktop__derecha{
         position: absolute;
@@ -452,18 +497,35 @@ a{
         flex-wrap: wrap;
     }
     .card-portafolio{
-        width: 30%;
+        width: 35%;
         flex-grow: 1;
         margin: 10px;
+        border-radius: $tamanoBorderRadius;
+        max-width: 47%;
+    }
+    .card-portafolio__imagen{
+        height: 400px;
+    }
+    .social{
+        margin: 0 auto;
+        max-width: 500px;
     }
 }
 @media screen and (min-width: 992px) { 
     body{
         font-size: 20px;
     }
+    .card-portafolio{
+        width: 35%;
+
+    }
 }
 @media (min-width: 1200px) { 
     body{
         font-size: 22px;
+    }
+    .card-portafolio{
+        width: 30%;
+
     }
 }

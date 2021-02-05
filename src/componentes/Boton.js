@@ -1,11 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 
-const Boton = () => {
+const Boton = ({icono, texto, link}) => {
     return (
-        <a href="#contacto" className="boton boton--margin">
-            <FontAwesomeIcon className="boton__icono boton__icono--caretdown" icon={faCaretDown} />Leer más</a>
+        <a href="#presentacion" className="boton boton--margin">
+            <FontAwesomeIcon className="boton__icono boton__icono--caretdown" icon={icono} />{texto}</a>
     );
 }
 
