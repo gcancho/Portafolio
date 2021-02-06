@@ -178,6 +178,9 @@ a{
     box-shadow: 2px 2px 5px black;
     background: $color1;
     border-radius: 4px;
+    &:hover{
+        opacity: 0.9;
+    }
 }
 
 .boton--margin{
@@ -247,7 +250,7 @@ a{
     border-radius: $tamanoBorderRadius;
     display: block;
     width: 100%;
-    box-shadow: 0 0 20px #5E8CA3;
+    // box-shadow: 0 0 20px #5E8CA3;
 }
 
 .presentacion__descripcion{
@@ -301,7 +304,7 @@ a{
 
 .card-portafolio__boton{
     display: block;
-    margin: 0.3125em auto;
+    margin: 0.625em auto;
     width: 8.5em;
     padding: 0.5rem;
     color: $blanco;
@@ -322,6 +325,11 @@ a{
         background-color: $blanco;
         opacity: 0.9;
     }
+}
+
+.card-portafolio__titulo{
+    display: block;
+    margin-top: 0.9375em;
 }
 
 .card-portafolio__boton svg{

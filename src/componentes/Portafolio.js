@@ -13,9 +13,9 @@ const Portafolio = () => {
             <div className="portafolio__wrap wrap">
                 <h2 className="portafolio__titulo titulo">Portafolio</h2>
                 <div className="portafolio__lista">
-                    <CardPortafolio clase={"card-portafolio__imagen"} imagen={ImagenPortafolio1} nombreWebsite="E-Commerce Website" link="https://gcancho.github.io/Blog-wordpress/" colorCard="" />
-                    <CardPortafolio clase={"card-portafolio__imagen"} imagen={ImagenPortafolio2} nombreWebsite="E-Commerce Website" link="https://gcancho.github.io/Hotel-Ventura/" colorCard="" />
-                    <CardPortafolio clase={"card-portafolio__imagen"} imagen={ImagenPortafolio6} nombreWebsite="E-Commerce Website" link="https://gcancho.github.io/Mis-mascotas/" colorCard="" />
+                    <CardPortafolio clase={"card-portafolio__imagen"} imagen={ImagenPortafolio1} nombreWebsite="Es-Commerce Website" link1="https://gcancho.github.io/blog-wordpress/" link2="https://github.com/gcancho/Blog-wordpress" />
+                    <CardPortafolio clase={"card-portafolio__imagen"} imagen={ImagenPortafolio2} nombreWebsite="E-Commerce Website"  link1="https://gcancho.github.io/Hotel-Ventura/" link2="https://github.com/gcancho/Hotel-Ventura"/>
+                    <CardPortafolio clase={"card-portafolio__imagen"} imagen={ImagenPortafolio6} nombreWebsite="E-Commerce Website"  link1="https://gcancho.github.io/Mis-mascotas/" link2="https://github.com/gcancho/Mis-mascotas"/>
                     {/* <CardPortafolio clase={"card-portafolio__imagen"} imagen={ImagenPortafolio4} nombreWebsite="E-Commerce Website" colorCard="" />
                     <CardPortafolio clase={"card-portafolio__imagen"} imagen={ImagenPortafolio5} nombreWebsite="E-Commerce Website" colorCard="" />
                     <CardPortafolio clase={"card-portafolio__imagen"} imagen={ImagenPortafolio6} nombreWebsite="E-Commerce Website" colorCard="" /> */}

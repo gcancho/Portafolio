@@ -17,14 +17,14 @@ const Presentacion = () => {
                         {/* <Datos /> */}
                     </div>
                 </div>
-                <div className="presentacion__cards">
+                {/* <div className="presentacion__cards">
                     <CardSkill miIcono={faHtml5} texto="Html 5"/>
                     <CardSkill miIcono={faCss3} texto="Css 3"/>
                     <CardSkill miIcono={faReact} texto="React JS"/>
                     <CardSkill miIcono={faFigma} texto="Figma"/>
                     <CardSkill miIcono={faSass} texto="Sass"/>
                     <CardSkill miIcono={faPhp} texto="Php"/>
-                </div>
+                </div> */}
             </div>
         </section>
     );
